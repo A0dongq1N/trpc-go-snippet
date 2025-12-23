@@ -6,7 +6,7 @@ client:
   service: 
     - name: trpc.mysql.server.service
       # Reference: https://github.com/go-sql-driver/mysql?tab=readme-ov-file#dsn-data-source-name
-      target: dsn://root:root1234@tcp(9.134.93.213:3306)/tdm?charset=utf8mb4&parseTime=True&timeout=10ms&readTimeout=10ms&writeTimeout=10ms
+      target: dsn://root:@tcp(:3306)/tdm?charset=utf8mb4&parseTime=True&timeout=10ms&readTimeout=10ms&writeTimeout=10ms
       timeout: 1
 
 plugins:                                           # Plugin configuration
